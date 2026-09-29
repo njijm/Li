@@ -127,7 +127,7 @@ setInterval(()=>{
 
 function update(){
  if(!playing)return;
- if(keys.arrowup||keys.w)speed+=.08;else speed-=.025;
+ if(keys.arrowup||keys.w)speed+=.08;else speed-=.002;
  if(keys.arrowdown||keys.s)speed-=.12;
  speed=THREE.MathUtils.clamp(speed,0,1.2);
  if(keys.arrowleft||keys.a)steering=-.045;
