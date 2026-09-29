@@ -121,8 +121,8 @@ setInterval(()=>{
  const climates=["☀️ Normal","☁️ Nublado","🌧️ entre rios","🌫️ Anti niebla"];
  const w=climates[Math.floor(Math.random()*climates.length)];
  document.getElementById("weather").textContent=w;
- scene.fog=w.includes("Lluvia")?new THREE.Fog(0x667788,20,120):
- scene.fog=w.includes("Niebla")?new THREE.Fog(0xaaaaaa,10,70):new THREE.Fog(0x87ceeb,40,220);
+ scene.fog=w.includes("Accion")?new THREE.Fog(0x667788,20,120):
+ scene.fog=w.includes("Entre Rios")?new THREE.Fog(0xaaaaaa,10,70):new THREE.Fog(0x87ceeb,40,220);
 },15000);
 
 function update(){
