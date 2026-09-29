@@ -144,7 +144,7 @@ function update(){
 
  if(truck.position.z<destination.position.z+4){
   money+=500;truck.position.z=0;speed=0;
-  document.getElementById("mission").textContent="🏆 ¡ENTREGA COMPLETADA! +$500";
+  document.getElementById("mission").textContent="🏆 ¡ENTREGA COMPLETADA! +$1000";
   setTimeout(()=>document.getElementById("mission").textContent="📦 Entregá la carga en la zona verde",2500);
  }
 
