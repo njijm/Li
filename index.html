@@ -118,7 +118,7 @@ document.getElementById("play").onclick=()=>{
 };
 
 setInterval(()=>{
- const climates=["☀️ Despejado","☁️ Nublado","🌧️ Lluvia","🌫️ Niebla"];
+ const climates=["☀️ Normal","☁️ Nublado","🌧️ entre rios","🌫️ Anti niebla"];
  const w=climates[Math.floor(Math.random()*climates.length)];
  document.getElementById("weather").textContent=w;
  scene.fog=w.includes("Lluvia")?new THREE.Fog(0x667788,20,120):
