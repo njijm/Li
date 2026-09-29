@@ -142,7 +142,7 @@ function update(){
   if(car.mesh.position.distanceTo(truck.position)<2.5){damage+=.05;speed*=.7;}
  });
 
- if(truck.position.z<destination.position.z+8){
+ if(truck.position.z<destination.position.z+19){
   money+=1000;truck.position.z=0;speed=0;
   document.getElementById("mission").textContent="🏆 ¡ENTREGA COMPLETADA! +$1000";
   setTimeout(()=>document.getElementById("mission").textContent="📦 Entregá la carga en la zona verde",2500);
